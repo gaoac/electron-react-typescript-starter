@@ -51,8 +51,8 @@
               "config": "./webpack.renderer.config.js",
               "entryPoints": [
                 {
-                  "html": "./src/index.html",
-                  "js": "./src/renderer.js",
+                  "html": "./public/index.html",
+                  "js": "./src/renderer/renderer.js",
                   "name": "main_window"
                 }
               ]
@@ -75,6 +75,8 @@
     "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
     "css-loader": "^3.0.0",
     "electron": "6.0.0",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
     "node-loader": "^0.6.0",
     "style-loader": "^0.23.1"
   }

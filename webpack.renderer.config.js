@@ -4,6 +4,9 @@ const rules = require('./webpack.rules');
 
 module.exports = {
   // Put your normal webpack config below here
+  resolve: {
+    extensions: [".js", ".ts", ".jsx",".tsx"],
+  },
   module: {
     rules,
   },

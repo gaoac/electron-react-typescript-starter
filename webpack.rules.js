@@ -15,7 +15,7 @@ module.exports = [
     },
   },
   {
-    test: /\.(js|jsx)$/,
+    test: /\.((j|t)s|(j|t)sx)$/,
     exclude: /node_modules/,
     loaders: [
       {

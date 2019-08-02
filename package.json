@@ -52,7 +52,7 @@
               "entryPoints": [
                 {
                   "html": "./public/index.html",
-                  "js": "./src/renderer/renderer.js",
+                  "js": "./src/renderer/renderer.tsx",
                   "name": "main_window"
                 }
               ]
@@ -73,6 +73,7 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
     "@electron-forge/cli": "6.0.0-beta.43",
     "@electron-forge/maker-deb": "6.0.0-beta.43",
     "@electron-forge/maker-rpm": "6.0.0-beta.43",
@@ -81,6 +82,9 @@
     "@electron-forge/plugin-webpack": "6.0.0-beta.43",
     "@hot-loader/react-dom": "^16.8.6",
     "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
+    "@types/node": "^12.6.9",
+    "@types/react": "^16.8.24",
+    "@types/react-dom": "^16.8.5",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.0.0",
     "electron": "6.0.0",
@@ -88,6 +92,8 @@
     "less-loader": "^5.0.0",
     "node-loader": "^0.6.0",
     "react-hot-loader": "^4.12.10",
-    "style-loader": "^0.23.1"
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3"
   }
 }

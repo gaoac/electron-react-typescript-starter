@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface DetailsProps {
   title: string;
@@ -7,7 +7,7 @@ interface DetailsProps {
 
 const Details: React.SFC<DetailsProps> = ({ title, content }) => {
   return (
-    <div className='details'>
+    <div className="details">
       <p>{title}</p>
       <p>{content}</p>
     </div>

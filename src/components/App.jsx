@@ -1,16 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
+import { hot } from "react-hot-loader";
 import "./app.less";
 
- class App extends Component {
-  render() {
-    return (
-      <div>
-        <h1>💖 Hello World!</h1>
-        <p>
-          Welcome to your <span>Electron application</span>.
-        </p>
-      </div>
-    );
-  }
-}
-export default App;
+const App = () => (
+  <div>
+    <h1>💖 Hello World!</h1>
+    <p>
+      Welcome to your <span>Electron application</span>.
+    </p>
+  </div>
+);
+
+export default hot(module)(App);

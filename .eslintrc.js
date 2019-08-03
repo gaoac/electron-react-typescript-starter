@@ -4,16 +4,12 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: [
-    'airbnb',
-    "plugin:prettier/recommended",
-    "plugin:@typescript-eslint/recommended",
-  ],
+  extends: ['airbnb', 'plugin:prettier/recommended', 'plugin:@typescript-eslint/recommended'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
-  parser: "babel-eslint",
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -21,14 +17,18 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-    "prettier",
-    "@typescript-eslint"
-  ],
+  plugins: ['react', 'prettier', '@typescript-eslint'],
   rules: {
-    "prettier/prettier": "error",
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx','ts','tsx'] }],
-    "@typescript-eslint/indent":0,
+    'prettier/prettier': 'error',
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', 'ts', 'tsx'] }],
+    '@typescript-eslint/indent': 0,
+    'react/prop-types': 0,
+  },
+  settings: {
+    'import/resolver': {
+      webpack: {
+        config: './webpack.renderer.config.js',
+      },
+    },
   },
 };

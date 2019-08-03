@@ -5,13 +5,11 @@ interface DetailsProps {
   content: string;
 }
 
-const Details: React.SFC<DetailsProps> = ({ title, content }) => {
-  return (
-    <div className="details">
-      <p>{title}</p>
-      <p>{content}</p>
-    </div>
-  );
-};
+const Details: React.SFC<DetailsProps> = ({ title, content }): React.ReactElement => (
+  <div className="details">
+    <p>{title}</p>
+    <p>{content}</p>
+  </div>
+);
 
 export default Details;

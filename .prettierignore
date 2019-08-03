@@ -3,3 +3,14 @@
 **/*.ejs
 **/*.html
 package.json
+.DS_Store
+.eslintignore
+*.png
+*.toml
+.editorconfig
+.gitignore
+.prettierignore
+LICENSE
+.eslintcache
+*.lock
+yarn-error.log

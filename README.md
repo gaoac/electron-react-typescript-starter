@@ -14,9 +14,6 @@
 
 ## 快速上手
 
-要克隆并运行此存储库，您需要在计算机上安装Git和Node.js（随npm一起提供）。从您的命令行：
-
-
 ```bash
 # 克隆此存储库
 git clone https://github.com/gaoac/electron-react-typescript-starter.git

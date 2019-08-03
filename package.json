@@ -9,8 +9,10 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "eslint src --ext [.js,.jsx,.ts,.tsx] ",
-    "lint:fix": "eslint src --fix --ext [.js,.jsx,.ts,.tsx] ",
+    "lint:style": "stylelint 'src/**/*.less' --syntax less",
+    "lint:style:fix": "stylelint 'src/**/*.less' --syntax less --fix",
+    "lint": "eslint src --ext [.js,.jsx,.ts,.tsx] && npm run lint:style ",
+    "lint:fix": "eslint src --fix --ext [.js,.jsx,.ts,.tsx] && npm run lint:style:fix ",
     "lint-staged": "lint-staged",
     "lint-staged:js": "eslint src --ext [.js,.jsx,.ts,.tsx]"
   },
@@ -30,7 +32,8 @@
       "node ./scripts/lint-prettier.js",
       "git add"
     ],
-    "**/*.{js,ts,jsx,tsx,}": "npm run lint-staged:js"
+    "**/*.{js,ts,jsx,tsx,}": "npm run lint-staged:js",
+    "**/*.less": "stylelint --syntax less"
   },
   "config": {
     "forge": {
@@ -125,6 +128,9 @@
     "node-loader": "^0.6.0",
     "prettier": "^1.18.2",
     "style-loader": "^0.23.1",
+    "stylelint": "^10.1.0",
+    "stylelint-config-prettier": "^5.2.0",
+    "stylelint-config-standard": "^18.3.0",
     "ts-loader": "^6.0.4",
     "typescript": "^3.5.3"
   }

@@ -2745,9 +2745,9 @@ electron-winstaller@^3.0.4:
     pify "^4.0.1"
     temp "^0.9.0"
 
-electron@6.0.0:
+electron@^6.0.0:
   version "6.0.0"
-  resolved "https://registry.npm.taobao.org/electron/download/electron-6.0.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Felectron%2Fdownload%2Felectron-6.0.0.tgz#03712d461ac73cdf920b2336d6560d6c6b7f19cc"
+  resolved "https://registry.npm.taobao.org/electron/download/electron-6.0.0.tgz#03712d461ac73cdf920b2336d6560d6c6b7f19cc"
   integrity sha1-A3EtRhrHPN+SCyM21lYNbGt/Gcw=
   dependencies:
     "@types/node" "^10.12.18"

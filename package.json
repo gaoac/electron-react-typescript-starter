@@ -63,8 +63,8 @@
     }
   },
   "dependencies": {
+    "electron": "^6.0.0",
     "electron-squirrel-startup": "^1.0.0",
-    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-hot-loader": "^4.12.10"
@@ -93,7 +93,6 @@
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.0.0",
-    "electron": "6.0.0",
     "electron-devtools-installer": "^2.2.4",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.1",

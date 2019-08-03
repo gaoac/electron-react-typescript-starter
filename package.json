@@ -12,8 +12,7 @@
     "lint": "eslint src --ext [.js,.jsx,.ts,.tsx] ",
     "lint:fix": "eslint src --fix --ext [.js,.jsx,.ts,.tsx] ",
     "lint-staged": "lint-staged",
-    "lint-staged:js": "eslint src --ext [.js,.jsx,.ts,.tsx]",
-    "prettier": "node ./scripts/prettier.js"
+    "lint-staged:js": "eslint src --ext [.js,.jsx,.ts,.tsx]"
   },
   "keywords": [],
   "author": {
@@ -79,7 +78,6 @@
     }
   },
   "dependencies": {
-    "electron": "^6.0.0",
     "electron-squirrel-startup": "^1.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -109,6 +107,7 @@
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.0.0",
+    "electron": "^6.0.0",
     "electron-devtools-installer": "^2.2.4",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.1",

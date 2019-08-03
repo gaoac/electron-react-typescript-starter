@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 /* eslint-disable no-console */
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { app, BrowserWindow } from 'electron';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import installExtension, {

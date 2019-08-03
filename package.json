@@ -9,7 +9,11 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "lint": "eslint src --ext [.js,.jsx,.ts,.tsx] ",
+    "lint:fix": "eslint src --fix --ext [.js,.jsx,.ts,.tsx] ",
+    "lint-staged": "lint-staged",
+    "lint-staged:js": "eslint src --ext [.js,.jsx,.ts,.tsx]",
+    "prettier": "node ./scripts/prettier.js"
   },
   "keywords": [],
   "author": {
@@ -17,6 +21,18 @@
     "email": "gaoancun@qq.com"
   },
   "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,ts,jsx,tsx,json}": [
+      "node ./scripts/lint-prettier.js",
+      "git add"
+    ],
+    "**/*.{js,ts,jsx,tsx,}": "npm run lint-staged:js"
+  },
   "config": {
     "forge": {
       "packagerConfig": {},
@@ -103,8 +119,10 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
+    "husky": "^3.0.2",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
+    "lint-staged": "^9.2.1",
     "node-loader": "^0.6.0",
     "prettier": "^1.18.2",
     "style-loader": "^0.23.1",

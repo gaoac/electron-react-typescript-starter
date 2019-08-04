@@ -17,11 +17,42 @@ module.exports = [
   {
     test: /\.(jsx|tsx|ts|js)?$/,
     exclude: /node_modules/,
-    use: ['babel-loader', { loader: 'eslint-loader', options: { fix: true } }],
+    use: [
+      {
+        loader: 'babel-loader',
+        options: {
+          plugins: [
+            [
+              'import',
+              {
+                libraryName: 'antd',
+                style: true,
+              },
+            ],
+          ],
+        },
+      },
+      {
+        loader: 'eslint-loader',
+        options: { fix: true },
+      },
+    ],
   },
   {
     test: /\.(less|css)$/,
-    use: ['style-loader', 'css-loader', 'less-loader'],
+    use: [
+      'style-loader',
+      'css-loader',
+      {
+        loader: 'less-loader',
+        options: {
+          modifyVars: {
+            'primary-color': '#1DA57A',
+          },
+          javascriptEnabled: true,
+        },
+      },
+    ],
   },
   {
     test: /\.(png|jpe?g|gif|svg)$/,

@@ -7,8 +7,8 @@
 - 🚀 **支持 React**
 - 💡 **支持 TypeScript**
 - 🌱 **支持 Less**
-- ⚡ **支持 局部热更新（react-hot-loader）**
-- 🧰 **集成React-Devtools、Redux-Devtools**
+- ⚡️ **支持 局部热更新（react-hot-loader）**
+- 🛠️ **集成React-Devtools、Redux-Devtools**
 - 🚨 **集成Eslint、StyleLint、Prettier**
 - 🔍 **集成husky、lint-staged，支持pre-commit代码规范检测**
 

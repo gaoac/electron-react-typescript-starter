@@ -23,4 +23,16 @@ module.exports = [
     test: /\.(less|css)$/,
     use: ['style-loader', 'css-loader', 'less-loader'],
   },
+  {
+    test: /\.(png|jpe?g|gif|svg)$/,
+    use: [
+      {
+        loader: 'file-loader',
+        options: {
+          outputPath: 'images',
+          name: '[name]_[sha512:hash:base64:7].[ext]',
+        },
+      },
+    ],
+  },
 ];

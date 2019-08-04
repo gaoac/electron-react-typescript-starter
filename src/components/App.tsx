@@ -1,6 +1,7 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
 import Details from './Details';
+import logo from '@/assets/electron.png';
 import './app.less';
 
 const App: React.FC = (): React.ReactElement => (
@@ -13,6 +14,9 @@ const App: React.FC = (): React.ReactElement => (
     </h1>
     <p>Welcome to your Electron application.</p>
     <Details title="Do you have a dream?" content="Yes, I do." />
+    <div className="img-wrapper">
+      <img src={logo} alt="" className="img" />
+    </div>
   </div>
 );
 

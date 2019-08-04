@@ -21,6 +21,7 @@ module.exports = {
   rules: {
     'prettier/prettier': 'error',
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', 'ts', 'tsx'] }],
+    'import/no-unresolved': [2, { ignore: ['^@/'] }],
     '@typescript-eslint/indent': 0,
     'react/prop-types': 0,
   },

@@ -10,7 +10,7 @@
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "lint:style": "stylelint \"src/**/*.less\" --syntax less",
-    "lint:style:fix": "stylelint 'src/**/*.less' --syntax less --fix",
+    "lint:style:fix": "stylelint \"src/**/*.less\" --syntax less --fix",
     "lint": "eslint src --ext [.js,.jsx,.ts,.tsx] && npm run lint:style ",
     "lint:fix": "eslint src --fix --ext [.js,.jsx,.ts,.tsx] && npm run lint:style:fix ",
     "lint-staged": "lint-staged",

@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'dva';
 
 interface DetailsProps {
   title: string;
@@ -12,4 +13,7 @@ const Details: React.SFC<DetailsProps> = ({ title, content }): React.ReactElemen
   </div>
 );
 
-export default Details;
+export default connect(({ global }) => ({
+  title: global.title,
+  content: global.content,
+}))(Details);

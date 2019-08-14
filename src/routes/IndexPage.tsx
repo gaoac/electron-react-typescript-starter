@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button } from 'antd';
 import { hot } from 'react-hot-loader';
-import Details from './Details';
+import Details from '@/components/Details';
 import logo from '@/assets/electron.png';
-import './app.less';
+import './IndexPage.less';
 
 const App: React.FC = (): React.ReactElement => (
   <div>
